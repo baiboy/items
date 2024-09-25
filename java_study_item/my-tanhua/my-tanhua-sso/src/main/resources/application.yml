@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: itcast-tanhua-sso
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mytanhua?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: mypassword
+  redis:
+    jedis:
+      pool:
+        max-wait: 5000ms
+        max-idle: 100
+        min-idle: 10
+    timeout: 10s
+    cluster:
+      nodes: 127.0.0.1:6379,127.0.0.1:6380,127.0.0.1:6381
+      max-redirects: 5
+server:
+  port: 18080
+mybatis-plus:
+  type-enums-package: com.tanhua.sso.enums
+  global-config:
+    db-config:
+      table-prefix: tb_
+      id-type: auto
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: tanhua
+jwt:
+  secret: "asdasd"
