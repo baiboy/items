@@ -29,7 +29,7 @@ rocketmq:
   producer:
     group: tanhua
 jwt:
-  secret: "asdasd"
+  secret: 76bd425b6f29f7fcc2e0bfc286043df1
 
 aliyun:
   sms:
