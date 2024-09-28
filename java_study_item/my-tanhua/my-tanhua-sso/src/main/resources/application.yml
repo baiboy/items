@@ -39,3 +39,9 @@ aliyun:
     domain: dysmsapi.aliyuncs.com
     signName: ABC商城
     templateCode: SMS_204756062
+
+minio:
+  endpoint: http://192.168.1.47:59000
+  accessKey: 123123123
+  secretKey: 123123123
+  bucket: tanhua-oss
